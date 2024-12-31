@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "author" content = "Dakotah Jones">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Website Portfolio for Dakotah</title>
+
+    <script src="jscript1.js" function="clickToCopy()">
+    </script>
+</head>
+<body>
+    <h1><center>
+        Hi I'm Dakotah Jones! Welcome to my website portfolio!
+    <img src="Images/oden1.jpg" alt="Profile Picture" width="350" height="350">
+        </center>
+    </h1>
+    <center>
+    <a href="https://www.linkedin.com/in/dakotahjones">
+        <img src="Images/linkedin.png" alt="LinkedIn" width="50" height="50">
+    </a>
+    <a href="https://github.com/DakotahJones">
+        <img src="Images/github.png" alt="LinkedIn" width="50" height="50">
+    </a>
+    <p>
+        <img src="Images/gmail.png" alt="Gmail" width="50" height="50" onclick="clickToCopy()" style="cursor: pointer;">
+    </p>
+    <script>
+        function clickToCopy() {
+            const email = "dakotahjones3@gmail.com";
+            navigator.clipboard.writeText(email).then(function() {
+                alert('Email copied!');
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        }
+    </script>
+</center>
+</body>
+</html>
+
+<!-- Portfolio needs:
+Contact Info [x]
+Relevant Social Media Accounts [x]
+Testimonials []
+About Me Page []
+Call to action []
+Best work []
+Blog []
+Case studies [] 
+-->
